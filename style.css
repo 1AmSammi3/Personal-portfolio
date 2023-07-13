@@ -18,6 +18,7 @@ nav{
    margin-top: 0;
    display: none;
    height: 92vh;
+   font-size: 250%;
    background: linear-gradient(45deg, #ffdfd5, #ffbfff);
    filter: opacity(0%);
 }
@@ -52,7 +53,7 @@ ul{
    padding-top: 70px;
 }
 li{
-   margin: 20px;
+   margin: 70px;
 }
 a{
    text-decoration: none;
@@ -62,7 +63,8 @@ a{
    padding: 10px;
    margin: 10px;
    position: absolute;
-   transform: translate(120px);
+   transform: translateX(350px);
+   font-size: 150%;
    border: none;
    background: transparent;
 }
@@ -80,14 +82,14 @@ a{
    gap: 4px;
 }
 .ham{
-   width: 30px;
-   height: 4px;
-   border-radius: 1.5px;
+   width: 70px;
+   height: 10px;
+   border-radius: 3px;
    background: black;
    cursor: pointer;
 }
 .ham.mid{
-   width: 20px;
+   width: 40px;
 }
 .intro{
    display: flex;
@@ -98,12 +100,16 @@ a{
    text-align: center;
 }
 img{
-   border: solid 5px #fff;
+   border: solid 15px #fff;
    border-radius: 50%;
-   box-shadow: 0 5px 10px #2000424b;
+   box-shadow: 0 10px 10px #2000424b;
    width: 70%;
    height: 70%;
-   margin: 40px auto;
+   margin: 100px auto 100px auto;
+}
+.intro h1{
+   font-size: 400%;
+   margin: 20px;
 }
 .buttons{
    display: flex;
@@ -114,28 +120,31 @@ img{
 .load{
    background: #6800d8;
    color: #fff;
-   padding: 10px;
-   border-radius: 10px;
+   padding: 30px;
+   border-radius: 30px;
+}
+section{
+   margin-top: 130px;
 }
 .load:hover{
    box-shadow: 0 0 40px #7a00ff58;
 }
 .hire{
-   padding: 10px;
+   padding: 30px;
    border: solid 1px black;
-   border-radius: 10px;
+   border-radius: 30px;
 }
 .container{
-   margin: 5px 20px 30px 20px;
+   margin: 0px 80px 30px 80px;
    color: #494949;
 }
 .container.about h2{
-   margin: 20px 20px 30px 20px;
+   font-size: 180%;
 }
 .grid{
    display: grid;
    grid-template-column: 1fr;
-   margin-top: 50px;
+   margin-top: 80px;
 }
 .about{
    display: flex;
@@ -143,9 +152,6 @@ img{
 }
 h1, h2, strong{
    color: #5000a7;
-}
-h2{
-   margin: 20px 0 0 20px;
 }
 hr{
    width: 100%;
@@ -155,20 +161,20 @@ hr{
    display: flex;
    color: black;
    flex-direction: column;
-   padding: 20px;
+   padding: 40px;
    margin-bottom: 20px;
-   gap: 10px;
+   gap: 20px;
    box-shadow: 0 2px 5px #2000424b;
-   border-radius: 8px;
+   border-radius: 12px;
 }
 .p a{
    color: #5000a7;
    justify-self: flex-end;
    width: 30%;
-   font-size:70%;
+   font-size: 130%;
 }
 .p span{
-   font-size: 70%;
+   font-size: 110%;
    color: #494949;
 }
 blockquote{
@@ -176,7 +182,7 @@ blockquote{
 }
 cite{
    color: #494949;
-   font-size: 90%;
+   font-size: 70%;
 }
 .last{
    display: flex;
@@ -188,26 +194,28 @@ cite{
 footer{
    background: #5000a7;
    color: #fff;
-   padding: 20px;
-   border-radius: 20px;
+   padding: 40px;
+   border-radius: 30px;
    text-align: center;
+   margin: 40px;
 }
 .a{
    color: #fff;
-   margin: 40px;
-   font-size: 100%;
+   margin: 120px auto 200px;
+   font-size: 90%;
    border: 1px solid #fff;
-   padding: 10px;
-   border-radius: 10px;
+   padding: 20px;
+   border-radius: 15px;
 }
 footer h1{
    color: #fff;
-   margin-bottom: 40px;
+   margin-bottom: 80px;
+   margin-top: 40px;
 }
 footer a{
    color: #fff;
-   margin-bottom: 10px;
-   font-size: 80%;
+   margin-bottom: 20px;
+   font-size: 200%;
 }
 footer div{
    color: #fff;
@@ -216,12 +224,12 @@ footer div{
 }
 footer p{
    color: #fff;
-   margin: 40px auto 2px auto;
+   margin: 150px auto 2px auto;
    font-size: 100%;
 }
 footer .cp{
-   margin: 20px auto 0px auto;
-   font-size: 80%;
+   margin: 40px auto 0px auto;
+   font-size: 60%;
 }
 footer hr{
    border: solid 1px #fff;
