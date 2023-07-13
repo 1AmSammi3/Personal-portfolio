@@ -250,7 +250,7 @@ footer hr{
 section{
    margin-top: 40px;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
    section{
       display: flex;
       justify-content: space-around;
