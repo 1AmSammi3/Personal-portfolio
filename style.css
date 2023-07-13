@@ -6,11 +6,23 @@
   list-style: none;
   font-family: 'Poppins', Arial, sans-serif;
 }
+section,
+footer {
+  opacity: 0; /* Initially hide the sections and footer */
+  transform: translateY(50px);
+  transition: opacity 1s, transform 2s; /* Apply the transition effect */
+}
+
+section.active,
+footer.active {
+  opacity: 1; /* Show the sections and footer */
+  transform: translateY(0); /* Slide them in from the left */
+}
 html{
    scroll-behavior: smooth;
 }
 nav{
-   position: relative;
+   display: relative;
 }
 .menu{
    position: sticky;
@@ -18,7 +30,6 @@ nav{
    margin-top: 0;
    display: none;
    height: 92vh;
-   font-size: 250%;
    background: linear-gradient(45deg, #ffdfd5, #ffbfff);
    filter: opacity(0%);
 }
@@ -53,46 +64,44 @@ ul{
    padding-top: 70px;
 }
 li{
-   margin: 70px;
+   margin: 20px;
 }
 a{
    text-decoration: none;
-   color: black;
+   color: #5000a7;
 }
 .back{
    padding: 10px;
    margin: 10px;
    position: absolute;
-   transform: translateX(350px);
-   font-size: 150%;
+   transform: translate(120px);
    border: none;
    background: transparent;
 }
 .navbar{
    position: sticky;
-   top: 0px;
+   top: 0;
+   z-index: 2;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   color: #5000a7;
    padding: 10px 20px 10px 20px;
-}
-.navbar h1{
-   font-size: 400%;
 }
 .hamburger{
    display: flex;
    flex-direction: column;
-   gap: 8px;
+   gap: 4px;
 }
 .ham{
-   width: 70px;
-   height: 7px;
-   border-radius: 3px;
+   width: 30px;
+   height: 4px;
+   border-radius: 1.5px;
    background: black;
    cursor: pointer;
 }
 .ham.mid{
-   width: 40px;
+   width: 20px;
 }
 .intro{
    display: flex;
@@ -103,56 +112,44 @@ a{
    text-align: center;
 }
 img{
-   border: solid 15px #fff;
+   border: solid 5px #fff;
    border-radius: 50%;
-   box-shadow: 0 10px 10px #2000424b;
+   box-shadow: 0 5px 10px #2000424b;
    width: 70%;
    height: 70%;
-   margin: 100px auto 100px auto;
-}
-.int{
-   display: flex;
-   flex-direction: column;
-}
-.intro h1{
-   font-size: 400%;
-   margin: 40px;
+   margin: 40px auto;
 }
 .buttons{
    display: flex;
    gap: 20px;
    justify-content: center;
-   font-size: 180%;
+   margin-top: 50px;
 }
 .load{
    background: #6800d8;
    color: #fff;
-   padding: 20px;
-   border-radius: 20px;
-}
-section, footer{
-   margin-top: 130px;
+   padding: 10px;
+   border-radius: 10px;
 }
 .load:hover{
    box-shadow: 0 0 40px #7a00ff58;
 }
 .hire{
-   padding: 20px;
+   padding: 10px;
    border: solid 1px black;
-   border-radius: 20px;
+   border-radius: 10px;
 }
 .container{
-   margin: 0px 80px 30px 80px;
+   margin: 5px 20px 30px 20px;
    color: #494949;
 }
- h2{
-   font-size: 180%;
-   margin-left: 80px;
+.container.about h2{
+   margin: 20px 20px 30px 20px;
 }
 .grid{
    display: grid;
    grid-template-column: 1fr;
-   margin-top: 80px;
+   margin-top: 50px;
 }
 .about{
    display: flex;
@@ -161,31 +158,32 @@ section, footer{
 h1, h2, strong{
    color: #5000a7;
 }
+h2{
+   margin: 20px 0 0 20px;
+}
 hr{
    width: 100%;
-   border: solid 1px #47474747;
+   border: solid .5px #5000a7;
 }
 .p{
    display: flex;
    color: black;
    flex-direction: column;
-   padding: 40px;
-   margin-bottom: 20px;
-   gap: 20px;
+   padding: 20px;
+   margin-bottom: 10px;
+   border: solid 1px #5000a7;
+   gap: 10px;
    box-shadow: 0 2px 5px #2000424b;
-   border-radius: 12px;
-}
-.p div{
-   font-size: 200%;
+   border-radius: 8px;
 }
 .p a{
    color: #5000a7;
    justify-self: flex-end;
    width: 30%;
-   font-size: 150%;
+   font-size:70%;
 }
 .p span{
-   font-size: 140%;
+   font-size: 70%;
    color: #494949;
 }
 blockquote{
@@ -193,7 +191,7 @@ blockquote{
 }
 cite{
    color: #494949;
-   font-size: 75%;
+   font-size: 90%;
 }
 .last{
    display: flex;
@@ -205,28 +203,26 @@ cite{
 footer{
    background: #5000a7;
    color: #fff;
-   padding: 40px;
-   border-radius: 30px;
+   padding: 20px;
+   border-radius: 20px;
    text-align: center;
-   margin: 120px auto auto auto;
 }
 .a{
    color: #fff;
-   margin: 120px auto 200px;
-   font-size: 90%;
+   margin: 40px;
+   font-size: 100%;
    border: 1px solid #fff;
-   padding: 20px;
-   border-radius: 15px;
+   padding: 10px;
+   border-radius: 10px;
 }
 footer h1{
    color: #fff;
-   margin-bottom: 80px;
-   margin-top: 40px;
+   margin-bottom: 40px;
 }
 footer a{
    color: #fff;
-   margin: 0px 20px 20px 20px;
-   font-size: 200%;
+   margin-bottom: 10px;
+   font-size: 80%;
 }
 footer div{
    color: #fff;
@@ -235,23 +231,40 @@ footer div{
 }
 footer p{
    color: #fff;
-   margin: 150px auto 2px auto;
+   margin: 40px auto 2px auto;
    font-size: 100%;
 }
 footer .cp{
-   margin: 40px auto 0px auto;
-   font-size: 60%;
+   margin: 20px auto 0px auto;
+   font-size: 80%;
 }
 footer hr{
    border: solid 1px #fff;
 }
+@media (min-width: 480px){
+   
+}
+.alter{
+   display: none;
+}
+section{
+   margin-top: 40px;
+}
 @media only screen and (min-width: 768px){
    section{
       display: flex;
-      align-items: flex-start;
+      justify-content: space-around;
+      box-sizing: border-box;
+   }
+   .alter{
+      display: flex;
+      gap: 20px;
+   }
+   .alter a{
+      color: #5000a7;
    }
    .container{
-      width: 1000px;
+      width: 60vw;
    }
    .pro{
       display: grid;
@@ -272,11 +285,14 @@ footer hr{
       justify-content: space-even;
       gap: 80px;
       align-items: center;
-      margin-left: 40vw;
+      margin-left: 20vw;
       margin-right: auto;
    }
    footer{
       position: absolute;
-      left: 11%;
+      left: 18%;
+   }
+   .hamburger{
+      display: none;
    }
 }
