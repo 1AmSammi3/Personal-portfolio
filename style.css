@@ -245,7 +245,38 @@ footer .cp{
 footer hr{
    border: solid 1px #fff;
 }
-@media (max-width: 480px){
-   
+@media only screen and (min-width: 480px){
+   section{
+      display: flex;
+      align-items: flex-start;
+   }
+   .container{
+      width: 1000px;
+   }
+   .pro{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+   }
+   .p.span{
+      grid-column: span 2;
+   }
+   img{
+      width: 60%;
+      height: 60%;
+      margin: none;
+   }
+   .intro{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-even;
+      gap: 80px;
+      align-items: center;
+      margin-left: 40vw;
+      margin-right: auto;
+   }
+   footer{
+      position: absolute;
+      left: 11%;
+   }
 }
-
