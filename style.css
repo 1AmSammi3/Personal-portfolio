@@ -12,7 +12,6 @@ footer {
   transform: translateY(50px);
   transition: opacity 1s, transform 2s; /* Apply the transition effect */
 }
-
 section.active,
 footer.active {
   opacity: 1; /* Show the sections and footer */
@@ -81,7 +80,7 @@ a{
 .navbar{
    position: sticky;
    top: 0;
-   z-index: 2;
+   background: #fff;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -294,5 +293,14 @@ section{
    }
    .hamburger{
       display: none;
+   }
+   header{
+      position: sticky;
+      top: 0;
+      z-index: 2;
+   }
+   .navbar{
+      box-shadow: inset 0 -2px #5000a7;
+      z-index: 2;
    }
 }
