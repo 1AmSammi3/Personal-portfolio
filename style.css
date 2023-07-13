@@ -110,6 +110,10 @@ img{
    height: 70%;
    margin: 100px auto 100px auto;
 }
+.int{
+   display: flex;
+   flex-direction: column;
+}
 .intro h1{
    font-size: 400%;
    margin: 40px;
@@ -126,7 +130,7 @@ img{
    padding: 20px;
    border-radius: 20px;
 }
-section{
+section, footer{
    margin-top: 130px;
 }
 .load:hover{
@@ -189,7 +193,7 @@ blockquote{
 }
 cite{
    color: #494949;
-   font-size: 60%;
+   font-size: 75%;
 }
 .last{
    display: flex;
@@ -221,7 +225,7 @@ footer h1{
 }
 footer a{
    color: #fff;
-   margin-bottom: 20px;
+   margin: 0px 20px 20px 20px;
    font-size: 200%;
 }
 footer div{
@@ -241,6 +245,7 @@ footer .cp{
 footer hr{
    border: solid 1px #fff;
 }
-@media (min-width: 480px){
+@media (max-width: 480px){
    
 }
+
