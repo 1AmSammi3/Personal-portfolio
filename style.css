@@ -201,7 +201,7 @@ cite{
    text-align: center;
 }
 footer{
-   background: #5000a7;
+   background: linear-gradient(45deg, #5000a7, #ff95e7);
    color: #fff;
    padding: 20px;
    border-radius: 20px;
@@ -250,7 +250,7 @@ footer hr{
 section{
    margin-top: 40px;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 768px){
    section{
       display: flex;
       justify-content: space-around;
