@@ -76,14 +76,17 @@ a{
    align-items: center;
    padding: 10px 20px 10px 20px;
 }
+.navbar h1{
+   font-size: 400%;
+}
 .hamburger{
    display: flex;
    flex-direction: column;
-   gap: 4px;
+   gap: 8px;
 }
 .ham{
    width: 70px;
-   height: 10px;
+   height: 7px;
    border-radius: 3px;
    background: black;
    cursor: pointer;
@@ -109,7 +112,7 @@ img{
 }
 .intro h1{
    font-size: 400%;
-   margin: 20px;
+   margin: 40px;
 }
 .buttons{
    display: flex;
@@ -169,16 +172,16 @@ hr{
    border-radius: 12px;
 }
 .p div{
-   font-size: 150%;
+   font-size: 200%;
 }
 .p a{
    color: #5000a7;
    justify-self: flex-end;
    width: 30%;
-   font-size: 130%;
+   font-size: 150%;
 }
 .p span{
-   font-size: 110%;
+   font-size: 140%;
    color: #494949;
 }
 blockquote{
@@ -186,7 +189,7 @@ blockquote{
 }
 cite{
    color: #494949;
-   font-size: 50%;
+   font-size: 60%;
 }
 .last{
    display: flex;
@@ -201,7 +204,7 @@ footer{
    padding: 40px;
    border-radius: 30px;
    text-align: center;
-   margin: 80px auto auto auto;
+   margin: 120px auto auto auto;
 }
 .a{
    color: #fff;
