@@ -245,7 +245,7 @@ footer .cp{
 footer hr{
    border: solid 1px #fff;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 768px){
    section{
       display: flex;
       align-items: flex-start;
