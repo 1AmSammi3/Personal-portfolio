@@ -129,6 +129,7 @@ img{
    color: #fff;
    padding: 10px;
    border-radius: 10px;
+   transition: all 1s;
 }
 .load:hover{
    box-shadow: 0 0 40px #7a00ff58;
@@ -144,6 +145,29 @@ img{
 }
 .container.about h2{
    margin: 20px 20px 30px 20px;
+}
+.containter.skills{
+   display: flex;
+   justify-content: center;
+}
+.container.skills .stuff{
+   display: flex;
+   border-radius: 20px;
+   padding: 40px;
+   border: ridge 5px #6800d8;
+   flex-direction: column;
+   font-size: 110%;
+   color: black;
+   gap: 20px;
+   text-align: center;
+   justify-content: center;
+}
+.stuff hr{
+   width: 70%;
+   align-self: center;
+   background: #6800d8;
+   border: inset 2px #6800d8;
+   border-radius: 4px;
 }
 .grid{
    display: grid;
