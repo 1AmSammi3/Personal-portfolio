@@ -30,7 +30,7 @@ nav{
    text-align: center;
    margin-top: 0;
    display: none;
-   height: 92vh;
+   height: 100vh;
    background: linear-gradient(45deg, #ffdfd5, #ffbfff);
    filter: opacity(0%);
 }
